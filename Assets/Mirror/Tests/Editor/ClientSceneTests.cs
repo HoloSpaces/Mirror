@@ -57,6 +57,13 @@ namespace Mirror.Tests
             // Finds All inactive Network Identities In Scene With SceneIds
             // ClearsExistingDictionary
             ClientScene.PrepareToSpawnSceneObjects();
+
+
+            // Need to create objects in scene
+            // make sure they are disabled and have sceneId
+            // then check if they are added to dictionary 
+            int someNumber = 2;
+            Assert.That(ClientScene.spawnableObjects, Has.Count.EqualTo(someNumber));
         }
 
 
